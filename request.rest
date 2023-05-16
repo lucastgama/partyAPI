@@ -1,0 +1,88 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "bla 1",
+    "description": "alguma coisa",
+    "price": 1234,
+    "image": "monk"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/64627486c2956543449dea78
+
+###
+DELETE  http://localhost:3000/api/services/646292620bdc1c5a0bae8137
+
+###
+PUT http://localhost:3000/api/services/646292550bdc1c5a0bae8133
+Content-Type: application/json
+
+{
+    "name": "blabla bla 1",
+    "description": "alguma coisa",
+    "price": 1234,
+    "image": "monk"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Lucas",
+    "description": "Uma festa",
+    "budget": 9000,
+    "image":"blablabla",
+    "services":[
+        {
+    "name": "bla 3",
+    "description": "alguma coisa",
+    "price": 1234,
+    "image": "monk"
+    },
+    {
+    "name": "bla 1",
+    "description": "alguma coisa",
+    "price": 1234,
+    "image": "monk"
+    }]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/6462c8758f5425f6c95ddc46
+
+###
+DELETE  http://localhost:3000/api/parties/6462c582e9ec67945a7b2724
+
+###
+PUT http://localhost:3000/api/parties/6462c8758f5425f6c95ddc46
+Content-Type: application/json
+
+{
+    "title": "Meu evvvveeeennntttoooo",
+    "author": "Lucas",
+    "description": "Uma festa",
+    "budget": 9000,
+    "image":"blablabla",
+    "services":[
+        {
+    "name": "bla 3",
+    "description": "alguma coisa",
+    "price": 1234,
+    "image": "monk"
+    },
+    {
+    "name": "bla 1",
+    "description": "alguma coisa",
+    "price": 1234,
+    "image": "monk"
+    }]
+}
